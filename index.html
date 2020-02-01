@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+
+    <title>Generador de tablas</title>
+</head>
+
+<body>
+    <h1>Configura tu tabla:</h1>
+
+    <table id="contenedor">
+
+        <tr>
+
+            <td>
+                <label>Filas</label><br>
+                <input type="number" id="filas" class="numeros">
+            </td>
+            <td>
+                <label>Columnas</label><br>
+                <input type="number" id="columnas" colspan="2" class="numeros">
+            </td>
+            <td>
+                <input type="button" value="Generar" id="generar">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <label>Color borde</label><br>
+                <input type="color" id="color_borde">
+            </td>
+            <td>
+                <label>Ancho borde</label><br>
+                <input type="number" id="ancho_borde" class="numeros">
+            </td>
+            <td rowspan="2">
+                <input type="button" value="Restablecer" id="reset">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Color fondo</label><br>
+                <input type="color" id="color_fondo_tabla">
+            </td>
+            <td>
+                <label>Ancho</label><br>
+                <input type="number" id="anchi2" >
+            </td>
+        </tr>
+
+    </table>
+
+    
+
+    <h1>Resultado:</h1>
+    <div id="resultado_tabla">
+
+       
+
+    </div>
+   
+  
+</body>
+
+</html>
